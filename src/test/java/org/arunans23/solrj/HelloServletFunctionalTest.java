@@ -1,4 +1,4 @@
-package org.gradle.demo;
+package org.arunans23.solrj;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.junit.After;
@@ -32,7 +32,7 @@ public class HelloServletFunctionalTest {
 
     @Test
     public void sayHello() throws Exception {      
-        driver.get("http://localhost:8080/webdemo");
+        driver.get("http://localhost:8080/solr-with-solrj");
 
         driver.findElement(By.id("say-hello-text-input")).sendKeys("Dolly");
         driver.findElement(By.id("say-hello-button")).click();
